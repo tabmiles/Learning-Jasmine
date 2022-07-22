@@ -1,16 +1,17 @@
-## Learning about Jasmine testing
-This code was made while following Dylan Israel's Intro to Jasmin Linkedin Learning Course
+# Learning about Jasmine testing
+This code was made while following Dylan Israel's Intro to Jasmin Linkedin Learning Course.
+Below is a list of examples I learned in that course.
 
 # Step by Step Examples:
 
-# Example of a test
+## Example of a test
         describe('Modal Component', () => {
             it('opens on click', () => {
                 expect(true).toBe(true);
             })
         }) 
 
-# How to have test name be same as class name
+## How to have test name be same as class name
         class Example {
             ...
         }
@@ -19,7 +20,7 @@ This code was made while following Dylan Israel's Intro to Jasmin Linkedin Learn
         })
 
 
-# Writing a test to check initial values are empty
+## Writing a test to check initial values are empty
 pet.js
         class Pet {
             firstName;
@@ -63,7 +64,7 @@ main.js
             });
         });
 
-# Using beforeEach
+## Using beforeEach
 pet.js
         class Pet {
             firstName;
@@ -101,7 +102,7 @@ main.js
             });
         });
 
-# Testing a function
+## Testing a function
 pet.js
         class Pet {
             firstName;
@@ -162,7 +163,7 @@ main.js
             });
         });
 
-# Skipping and Focusing
+## Skipping and Focusing
 Note: use for debugging purposes only
 
 Adding a 'f' in front of 'describe' or 'it' will focus it (only run that test):
@@ -183,7 +184,7 @@ Adding a 'x' in front of 'describe' or 'it' will skip/exclude it (will run all o
             ...this test will be skipped...
         });
 
-# Spies
+## Spies
         describe(`${Pet.name} Class`, () => {
             ...
 
@@ -204,7 +205,7 @@ Adding a 'x' in front of 'describe' or 'it' will skip/exclude it (will run all o
             });
         });
 
-# Another Spy Example
+## Another Spy Example
 pet.js
         class Pet {
             ...
@@ -246,7 +247,7 @@ main.js
             });
         });
 
-# Mocks
+## Mocks
 pet.js
         class Pet {
             firstName;
@@ -300,7 +301,7 @@ main.js
             });
         });
 
-# toDefine and toEqual
+## toDefine and toEqual
 pet.js
         class Pet {
             firstName;
@@ -344,7 +345,7 @@ main.js
             });
         });
 
-# toMatch
+## toMatch
 pet.js is same
 
 main.js
