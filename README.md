@@ -21,17 +21,17 @@ describe(`${Example.name}`, () => {
 
 # Writing a test to check initial values are empty
 pet.js
-class Pet {
-    firstName;
-    lastName;
-    breed;
+> class Pet {
+    > firstName;
+    > lastName;
+    > breed;
 
-    constructor(data = {}){
-        this.firstName = data.firstName || '';
-        this.lastName = data.lastName || '';
-        this.breed = data.breed || '';
-    }
-}
+    > constructor(data = {}){
+        > this.firstName = data.firstName || '';
+        > this.lastName = data.lastName || '';
+        > this.breed = data.breed || '';
+    > }
+> }
 
 main.js
 describe(`${Pet.name} Class`, () => {
