@@ -22,6 +22,7 @@ Below is a list of examples I learned in that course.
 
 ## Writing a test to check initial values are empty
 pet.js
+
         class Pet {
             firstName;
             lastName;
@@ -35,6 +36,7 @@ pet.js
         }
 
 main.js
+
         describe(`${Pet.name} Class`, () => {
             describe('default values', () => {
                 it('first name defaults to empty string', () => {
@@ -66,6 +68,7 @@ main.js
 
 ## Using beforeEach
 pet.js
+
         class Pet {
             firstName;
             lastName;
@@ -79,6 +82,7 @@ pet.js
         }
 
 main.js
+
         describe(`${Person.name} Class`, () => {
             let model;
             // before each runs before each test ('it')
@@ -104,6 +108,7 @@ main.js
 
 ## Testing a function
 pet.js
+
         class Pet {
             firstName;
             lastName;
@@ -124,6 +129,7 @@ pet.js
         }
 
 main.js
+
         describe(`${Pet.name} fullname function`, () => {
             let model;
 
@@ -167,6 +173,7 @@ main.js
 Note: use for debugging purposes only
 
 Adding a 'f' in front of 'describe' or 'it' will focus it (only run that test):
+
         fdescribe('fullname', () => {
             ...all tests here will run...
         });
@@ -176,6 +183,7 @@ Adding a 'f' in front of 'describe' or 'it' will focus it (only run that test):
         });
 
 Adding a 'x' in front of 'describe' or 'it' will skip/exclude it (will run all other tests):
+
         xdescribe('fullname', () => {
             ...all tests here will be skipped...
         });
@@ -207,6 +215,7 @@ Adding a 'x' in front of 'describe' or 'it' will skip/exclude it (will run all o
 
 ## Another Spy Example
 pet.js
+
         class Pet {
             ...
             getsTreats(){
@@ -221,6 +230,7 @@ pet.js
         }
 
 main.js
+
         describe(`${Pet.name} Class`, () => {
             ...
             describe('gets treats', () => {
@@ -249,6 +259,7 @@ main.js
 
 ## Mocks
 pet.js
+
         class Pet {
             firstName;
             lastName;
@@ -270,6 +281,7 @@ pet.js
         }
 
 main.js
+
         describe(`${Pet.name} Class`, () => {
             let model;
             let mockPetService;
@@ -303,6 +315,7 @@ main.js
 
 ## toDefine and toEqual
 pet.js
+
         class Pet {
             firstName;
             lastName;
@@ -318,6 +331,7 @@ pet.js
         }
 
 main.js
+
         describe(`${Pet.name} Class`, () => {
             it('exists', () => {
                 expect(Pet).toBeDefined();
@@ -349,6 +363,7 @@ main.js
 pet.js is same
 
 main.js
+
         describe(`${Pet.name} Class`, () => {
             it('exists', () => {
                 expect(Pet).toBeDefined();
